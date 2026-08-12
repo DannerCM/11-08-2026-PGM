@@ -1,0 +1,12 @@
+@if (personaje) {
+    <div class="detalle">
+        <img [src]="personaje.foto" [alt]="personaje.nombreCompleto">
+        <h2>{{personaje.nombreCompleto}}</h2>
+        <p>Apodo: {{personaje.apodo}}</p>
+        <p>Interpretado por: {{personaje.interpretadoPor}}</p>
+        <p>Ocupación: {{personaje.ocupacion}}</p>
+        <p>Estado: {{personaje.estatus}}</p>
+    </div>
+} @else {
+    <p>Personaje no encontrado</p>
+}

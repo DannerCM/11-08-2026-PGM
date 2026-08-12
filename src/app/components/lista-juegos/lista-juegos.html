@@ -1,0 +1,9 @@
+<div class="grid">
+    @for (personaje of personajes; track personaje.personajeId) {
+        <div class="tarjeta" [routerLink]="['/juego', personaje.personajeId]">
+            <img [src]="personaje.foto" [alt]="personaje.nombreCompleto">
+            <h3>{{personaje.nombreCompleto}}</h3>
+            <p>{{personaje.apodo}} · {{personaje.interpretadoPor}}</p>
+        </div>
+    }
+</div>
